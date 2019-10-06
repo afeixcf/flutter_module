@@ -16,7 +16,7 @@ void main() {
     // 以下两行 设置android状态栏为透明的沉浸。写在组件渲染之后，是为了在渲染后进行set赋值，覆盖状态栏，写在渲染之前MaterialApp组件会覆盖掉这个值。
     SystemUiOverlayStyle systemUiOverlayStyle =
         // SystemUiOverlayStyle(statusBarColor: Colors.transparent);
-        SystemUiOverlayStyle(statusBarColor: Color.fromARGB(100, 255, 0, 0));
+        SystemUiOverlayStyle(statusBarColor: Color.fromARGB(255, 71, 203, 255), statusBarIconBrightness: Brightness.light);
     SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
   }
 }
@@ -177,7 +177,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
-        backgroundColor: Color.fromARGB(100, 255, 0, 0)
+        backgroundColor: Color.fromARGB(255, 71, 203, 255)
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
